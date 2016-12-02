@@ -1,10 +1,10 @@
 package uaatokenfetcher_test
 
 import (
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/uaatokenfetcher"
+	"github.com/gmmeyer/datadog-firehose-nozzle/uaatokenfetcher"
 	"github.com/cloudfoundry/gosteno"
 
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/testhelpers"
+	"github.com/gmmeyer/datadog-firehose-nozzle/testhelpers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

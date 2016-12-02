@@ -4,8 +4,8 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/datadogclient"
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/nozzleconfig"
+	"github.com/gmmeyer/datadog-firehose-nozzle/datadogclient"
+	"github.com/gmmeyer/datadog-firehose-nozzle/nozzleconfig"
 	"github.com/cloudfoundry/gosteno"
 	"github.com/cloudfoundry/noaa/consumer"
 	noaaerrors "github.com/cloudfoundry/noaa/errors"

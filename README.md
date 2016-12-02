@@ -1,5 +1,5 @@
 ## Summary
-[![Build Status](http://crossorigin.me/https://loggregator.ci.cf-app.com/api/v1/teams/main/pipelines/nozzles/jobs/datadog-nozzle-unit-tests/badge)](https://loggregator.ci.cf-app.com/teams/main/pipelines/nozzles/jobs/datadog-nozzle-unit-tests) [![Coverage Status](https://coveralls.io/repos/cloudfoundry-incubator/datadog-firehose-nozzle/badge.svg)](https://coveralls.io/r/cloudfoundry-incubator/datadog-firehose-nozzle)
+[![Build Status](http://crossorigin.me/https://loggregator.ci.cf-app.com/api/v1/teams/main/pipelines/nozzles/jobs/datadog-nozzle-unit-tests/badge)](https://loggregator.ci.cf-app.com/teams/main/pipelines/nozzles/jobs/datadog-nozzle-unit-tests) [![Coverage Status](https://coveralls.io/repos/gmmeyer/datadog-firehose-nozzle/badge.svg)](https://coveralls.io/r/gmmeyer/datadog-firehose-nozzle)
 
 The datadog-firehose-nozzle is a CF component which forwards metrics from the Loggregator Firehose to [Datadog](http://www.datadoghq.com/)
 
@@ -59,7 +59,7 @@ ginkgo -r
 ### [Bosh](http://bosh.io)
 
 There is a bosh release that will configure, start and monitor the datadog nozzle:
-[https://github.com/cloudfoundry-incubator/datadog-firehose-nozzle-release](https://github.com/cloudfoundry-incubator/datadog-firehose-nozzle-release
+[https://github.com/gmmeyer/datadog-firehose-nozzle-release](https://github.com/gmmeyer/datadog-firehose-nozzle-release
 )
 
 ### [Lattice](http://lattice.cf)
@@ -77,7 +77,7 @@ ltc create datadog-nozzle cloudfoundry/datadog-nozzle-lattice \
 The `API KEY` is your datadog API key used to publish metrics. The `METRIC PREFIX` gets prepended to all metric names
 going through the nozzle.
 
-The docker image runs the nozzle with the config provided in [`lattice/lattice-datadog-firehose-nozzle.json`](https://github.com/cloudfoundry-incubator/datadog-firehose-nozzle/blob/master/lattice/lattice-datadog-firehose-nozzle.json).
+The docker image runs the nozzle with the config provided in [`lattice/lattice-datadog-firehose-nozzle.json`](https://github.com/gmmeyer/datadog-firehose-nozzle/blob/master/lattice/lattice-datadog-firehose-nozzle.json).
 If you are not running lattice locally you will have to also configure the traffic controller URL
 
 ```bash

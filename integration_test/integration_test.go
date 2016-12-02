@@ -10,8 +10,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/datadogclient"
-	. "github.com/cloudfoundry-incubator/datadog-firehose-nozzle/testhelpers"
+	"github.com/gmmeyer/datadog-firehose-nozzle/datadogclient"
+	. "github.com/gmmeyer/datadog-firehose-nozzle/testhelpers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"

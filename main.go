@@ -7,10 +7,10 @@ import (
 	"runtime/pprof"
 	"syscall"
 
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/datadogfirehosenozzle"
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/logger"
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/nozzleconfig"
-	"github.com/cloudfoundry-incubator/datadog-firehose-nozzle/uaatokenfetcher"
+	"github.com/gmmeyer/datadog-firehose-nozzle/datadogfirehosenozzle"
+	"github.com/gmmeyer/datadog-firehose-nozzle/logger"
+	"github.com/gmmeyer/datadog-firehose-nozzle/nozzleconfig"
+	"github.com/gmmeyer/datadog-firehose-nozzle/uaatokenfetcher"
 )
 
 var (
@@ -42,8 +42,8 @@ func main() {
 	go dumpGoRoutine(threadDumpChan)
 
 	log.Infof("Targeting datadog API URL: %s \n", config.DataDogURL)
-	datadog_nozzle := datadogfirehosenozzle.NewDatadogFirehoseNozzle(config, tokenFetcher, log)
-	datadog_nozzle.Start()
+	datadogNozzle := datadogfirehosenozzle.NewDatadogFirehoseNozzle(config, tokenFetcher, log)
+	datadogNozzle.Start()
 }
 
 func registerGoRoutineDumpSignalChannel() chan os.Signal {
