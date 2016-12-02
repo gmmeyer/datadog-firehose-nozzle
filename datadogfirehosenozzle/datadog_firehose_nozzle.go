@@ -4,12 +4,12 @@ import (
 	"crypto/tls"
 	"time"
 
-	"github.com/gmmeyer/datadog-firehose-nozzle/datadogclient"
-	"github.com/gmmeyer/datadog-firehose-nozzle/nozzleconfig"
 	"github.com/cloudfoundry/gosteno"
 	"github.com/cloudfoundry/noaa/consumer"
 	noaaerrors "github.com/cloudfoundry/noaa/errors"
 	"github.com/cloudfoundry/sonde-go/events"
+	"github.com/gmmeyer/datadog-firehose-nozzle/datadogclient"
+	"github.com/gmmeyer/datadog-firehose-nozzle/nozzleconfig"
 	"github.com/gorilla/websocket"
 	"github.com/pivotal-golang/localip"
 )
